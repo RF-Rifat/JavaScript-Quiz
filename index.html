@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Quiz Web</title>
+  </head>
+  <body>
+    <!-- Rules-Start -->
+    <div class="card" id="rules">
+        <div class="card-body">
+          <div class="card-header d-flex justify-content-evenly">
+            <img src="image/undraw_well_done_re_3hpo.svg" alt="photo">
+           <h1 class="card-title align-self-center mt-3">Rules :</h1>
+          </div>
+          <div class="container d-grid pt-4" id="card-body">
+            <p class="text-center text-danger">Follow The Instructions Before Participate :</p>
+            <ol class="d-grid">
+              <li>Once you starts answering the question, you cannot quit before finishing.</li>
+              <li>You will receive immediate feedback on their answer after each question.</li>
+              <li>You will not be able to change your answer once you have selected it.</li>
+              <li>You will receive a final score at the end of the quiz.</li>
+            </ol>
+          </div>
+        </div>
+        <a class="text-end card-btn"><button class="btn-1" id="start-btn"><span>Start</span></button></a>
+    </div>
+    <!-- Rules End -->
+
+    <!-- 1st Page Question start -->
+    <div class="question-section d-none">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between">
+          <h2 class="mt-2">Start Quiz</h2>
+          <div class="d-flex gap-1 mt-2" id="q-1-heading" id="time-count">
+            <h3 class="bg-success">Correct Ans :</h3>
+            <h3 id="showAns">0</h3>
+          </div>
+        </div>
+        <div class="card-body">
+          <h4 id="Questions" class="p-4"></h4>
+          <div id="options"></div>
+        </div>
+        <div class="d-flex justify-content-between p-3 align-items-center">
+          <p class="font-monospace m-0" id="total-que">1 of 5 Question</p>
+          <button class="btn-1 d-none" id="next-btn"><span>Next</span></button>
+        </div>
+      </div>
+    </div>
+    <!--Page Question end -->
+    <!-- Score page start -->
+    <div class="card d-none" id="result">
+      <div class="card-body h-75" id="result-mes">
+        </div>
+        <a class="text-end card-btn"><button class="btn-1" id="end-btn"><span>Restart</span></button></a>
+    </div>
+    <!-- Score page end -->
+
+    <!-- script -->
+    <script src="script.js"></script>
+    <script src="Question.js"></script>
+    <script src="result.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
