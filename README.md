@@ -12,7 +12,7 @@ A simple quiz website created using JavaScript, Bootstrap, HTML, and CSS.
 - 
 ## Description
 
-This quiz website is designed to [briefly describe the purpose of your quiz website]. It offers a user-friendly interface and provides a platform for users to [describe the main functionality or purpose of the website].
+This quiz website is designed to test your skill in JavaScript. It offers a user-friendly interface and provides a platform for users to test your basic js knowledge.
 
 ## Features
 
